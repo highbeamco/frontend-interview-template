@@ -1,0 +1,20 @@
+declare const classNames: {
+  readonly "size--8": "size--8";
+  readonly "size--10": "size--10";
+  readonly "size--12": "size--12";
+  readonly "size--14": "size--14";
+  readonly "size--16": "size--16";
+  readonly "size--18": "size--18";
+  readonly "size--20": "size--20";
+  readonly "size--28": "size--28";
+  readonly "size--40": "size--40";
+  readonly "weight--regular": "weight--regular";
+  readonly "weight--medium": "weight--medium";
+  readonly "weight--bold": "weight--bold";
+  readonly "align--left": "align--left";
+  readonly "align--center": "align--center";
+  readonly "align--right": "align--right";
+  readonly underline: "underline";
+  readonly text: "text";
+};
+export = classNames;

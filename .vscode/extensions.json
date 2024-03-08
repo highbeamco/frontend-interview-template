@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "clinyong.vscode-css-modules",
+    "mrmlnc.vscode-scss",
+    "stylelint.vscode-stylelint",
+    "formulahendry.auto-rename-tag",
+    "mikestead.dotenv",
+    "foxundermoon.shell-format",
+    "vunguyentuan.vscode-css-variables",
+    "ms-playwright.playwright"
+  ]
+}
