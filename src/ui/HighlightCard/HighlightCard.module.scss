@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  border-radius: 8px;
+  box-shadow: $shadow-xs;
+  padding: 16px 24px;
+  border: 1px solid $grey-200;
+  border-left: 4px solid;
+
+  &.default {
+    border-left-color: $purple-300;
+  }
+  &.warning {
+    border-left-color: $yellow-500;
+  }
+
+  // @include min-break-point(tablet) {
+  //   padding: 32px;
+  //   padding-top: calc(4px + 24px);
+  // }
+}
+
+.header {
+  display: block;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 28px;
+
+  // @include min-break-point(extra-large-desktop) {
+  //   row-gap: 0;
+  //   flex-direction: row;
+  //   column-gap: 80px;
+  // }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  padding-bottom: 32px;
+
+  // @include min-break-point(tablet) {
+  //   flex-direction: row;
+  //   column-gap: 16px;
+  //   max-width: 456px;
+  // }
+}

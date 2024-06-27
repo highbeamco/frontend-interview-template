@@ -1,0 +1,62 @@
+.highlightContainer {
+  position: relative;
+  background-color: white;
+  padding-left: 24px;
+}
+
+// Had to define a separate element for the border or else the border radius causes the border to curl around the corner https://github.com/highbeamco/highbeam/pull/7041#discussion_r1421091039
+.leftHandRule {
+  $border-width: 4px;
+
+  border-left: $border-width solid;
+  border-radius: 8px;
+  position: absolute;
+  inset: 0;
+  left: -$border-width;
+  z-index: -1;
+
+  &.default {
+    border-left-color: $purple-50;
+  }
+  &.success {
+    border-left-color: $green-500;
+  }
+  &.warning {
+    border-left-color: $yellow-500;
+  }
+  &.none {
+    display: none;
+  }
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  white-space: nowrap;
+  height: 24px;
+  font-weight: 500;
+  color: $grey-600;
+  font-size: 16px;
+}
+
+.value {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+
+  // 48px of height total, which is a factor of 8px.
+  height: 36px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.subtext {
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  min-height: 24px;
+  column-gap: 8px;
+  font-size: 14px;
+  color: $grey-600;
+}

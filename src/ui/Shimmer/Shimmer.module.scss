@@ -1,0 +1,29 @@
+@-webkit-keyframes shimmer {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1200px 0;
+  }
+  100% {
+    background-position: 1200px 0;
+  }
+}
+
+.shimmer {
+  height: 10px;
+  width: 100%;
+  border-radius: 10px;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-name: shimmer;
+  animation-timing-function: linear;
+  background-size: 600px 100%;
+  background-image: linear-gradient(to right, #f6f6f6 30%, #f0f0f0 50%, #f6f6f6 70%);
+}

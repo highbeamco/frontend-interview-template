@@ -1,0 +1,9 @@
+.container {
+  display: inline-flex;
+  align-items: center;
+}
+
+.text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
